@@ -1,5 +1,6 @@
 class AuthenticationController < ApplicationController
-  protect_from_forgery 
+  protect_from_forgery
+  before_action :authenticate_request!, except: [:authenticate_user]
 
   def authenticate_user
     user = User.find_for_database_authentication(email: params[:email])

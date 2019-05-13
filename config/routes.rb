@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   root "information#index"
 
   # API authentication
-  post 'auth_user' => 'authentication#authenticate_user'
+  post '/api/auth_user' => 'authentication#authenticate_user'
 end
