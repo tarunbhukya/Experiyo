@@ -1,7 +1,8 @@
 class InformationController < ApplicationController
+  before_action :authenticate_request!
+
 
   def index
-    render json: { 'logged_in' => true, 'user' => @current_user.to_json } if @current_user
-    render json: { 'logged_in' => false }
+    render json: {'user': current_user.to_json, 'signed_in': user_signed_in?}
   end
 end

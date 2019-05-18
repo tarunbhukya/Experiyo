@@ -1,0 +1,8 @@
+# day1 18th may 2019
+  - created initial app
+  - created both session based and token based authentication
+  - created a user model with fields
+  TODO:
+    - think about types of experiences
+    - think about visualization of the experience, types of data
+    - think about types of booking

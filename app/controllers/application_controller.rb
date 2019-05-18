@@ -1,9 +1,9 @@
 class ApplicationController < ActionController::Base
-  # before_action :authenticate_user!#, if: :is_not_format_json?
+  # before_action :authenticate_user!, if: :is_not_format_json?
+  #
+  # before_action :authenticate_request!, if: :is_format_json?
 
-  before_action :authenticate_request!
-
-  attr_reader :current_user
+  # attr_reader :current_user
 
   protected
 

@@ -7,4 +7,5 @@ Rails.application.routes.draw do
 
   # API authentication
   post '/api/auth_user' => 'authentication#authenticate_user'
+  post '/api/create_user' => 'authentication#create_user'
 end
